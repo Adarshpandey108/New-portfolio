@@ -13,26 +13,29 @@ import Footer from '@/components/Footer';
 const Index = () => {
   useEffect(() => {
     // Smooth scroll behavior for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href');
-        if (!targetId) return;
-        
-        const targetElement = document.querySelector(targetId);
-        if (!targetElement) return;
-        
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: 'smooth'
-        });
+    const handleAnchorClick = (e: Event) => {
+      e.preventDefault();
+      
+      const target = e.currentTarget as HTMLAnchorElement;
+      const targetId = target.getAttribute('href');
+      if (!targetId) return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
+      
+      window.scrollTo({
+        top: targetElement.getBoundingClientRect().top + window.scrollY,
+        behavior: 'smooth'
       });
+    };
+    
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', handleAnchorClick);
     });
     
     return () => {
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.removeEventListener('click', function() {});
+        anchor.removeEventListener('click', handleAnchorClick);
       });
     };
   }, []);

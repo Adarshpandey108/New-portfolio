@@ -36,10 +36,12 @@ const AboutSection = () => {
             className="relative"
           >
             <div className="relative w-full max-w-md mx-auto aspect-[4/5] rounded-2xl overflow-hidden glow">
-              <div className="absolute inset-0 bg-space-purple-dark/30 mix-blend-overlay"></div>
-              <div className="bg-gradient-to-b from-space-purple-medium/20 to-space-purple-dark/20 h-full w-full flex items-center justify-center">
-                <p className="text-lg text-gray-400 italic">Your profile image here</p>
-              </div>
+              <img 
+                src="/lovable-uploads/fed57b88-7955-44aa-b863-37b1bf5b8e2a.png" 
+                alt="Adarsh Pandey" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-space-purple-dark/10 mix-blend-overlay"></div>
               <div className="absolute inset-0 border-2 border-space-purple-light/30 rounded-2xl"></div>
             </div>
           </motion.div>
@@ -64,19 +66,19 @@ const AboutSection = () => {
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Name:</h4>
-                <p className="text-gray-300">Your Name</p>
+                <p className="text-gray-300">Adarsh Pandey</p>
               </div>
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Email:</h4>
-                <p className="text-gray-300">your.email@example.com</p>
+                <p className="text-gray-300">adarsh.pandey@example.com</p>
               </div>
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Location:</h4>
-                <p className="text-gray-300">Your Location</p>
+                <p className="text-gray-300">India</p>
               </div>
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Experience:</h4>
-                <p className="text-gray-300">X+ Years</p>
+                <p className="text-gray-300">3+ Years</p>
               </div>
             </div>
             

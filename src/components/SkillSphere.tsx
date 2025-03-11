@@ -1,5 +1,5 @@
 
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Text, Cloud, OrbitControls } from '@react-three/drei';
 import { Group } from 'three';
@@ -49,8 +49,6 @@ const SkillSphere = () => {
         <Cloud
           opacity={0.5}
           speed={0.4}
-          width={20}
-          depth={2}
           segments={20}
         />
         <group>

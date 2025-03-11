@@ -2,10 +2,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Eye } from 'lucide-react';
+import { ExternalLink, Github, Eye, CloudSun, Image } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const projectsData = [
+  {
+    title: 'Weather Application',
+    description: 'A responsive weather application that provides real-time weather updates for any location. Features include current conditions, forecasts, and temperature tracking.',
+    image: '/placeholder.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
+    githubLink: 'https://github.com/adarshpandey108/Weather-app',
+    liveLink: 'https://adarshpandey108.github.io/Weather-app/',
+    icon: CloudSun
+  },
+  {
+    title: 'Bharat Varsh Prakrite',
+    description: 'An informative platform showcasing the natural beauty and cultural heritage of India, featuring various regions and their unique characteristics.',
+    image: '/placeholder.svg',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
+    githubLink: 'https://github.com/adarshpandey108/Bharat_Varsh_-Prakrite-',
+    liveLink: 'https://adarshpandey108.github.io/Bharat_Varsh_-Prakrite-/',
+    icon: Image
+  },
   {
     title: 'AI Image Recognition Platform',
     description: 'A machine learning platform that can identify objects in images with high accuracy using state-of-the-art convolutional neural networks.',
@@ -13,6 +31,7 @@ const projectsData = [
     technologies: ['PyTorch', 'FastAPI', 'React', 'Docker'],
     githubLink: 'https://github.com/',
     liveLink: 'https://example.com/project1',
+    icon: Image
   },
   {
     title: 'Natural Language Processing API',
@@ -21,6 +40,7 @@ const projectsData = [
     technologies: ['TensorFlow', 'Flask', 'JavaScript', 'MongoDB'],
     githubLink: 'https://github.com/',
     liveLink: 'https://example.com/project2',
+    icon: Image
   },
   {
     title: 'Recommendation System',
@@ -29,6 +49,7 @@ const projectsData = [
     technologies: ['Python', 'Scikit-learn', 'PostgreSQL', 'Redis'],
     githubLink: 'https://github.com/',
     liveLink: 'https://example.com/project3',
+    icon: Image
   },
   {
     title: 'Full-Stack Learning Platform',
@@ -37,22 +58,7 @@ const projectsData = [
     technologies: ['React', 'Node.js', 'GraphQL', 'MongoDB'],
     githubLink: 'https://github.com/',
     liveLink: 'https://example.com/project4',
-  },
-  {
-    title: 'Real-time Analytics Dashboard',
-    description: 'A dashboard that visualizes data streams in real-time, featuring customizable charts, metrics, and alerting capabilities.',
-    image: '/placeholder.svg',
-    technologies: ['Next.js', 'D3.js', 'Express', 'Socket.io'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project5',
-  },
-  {
-    title: 'AI-Powered Content Generator',
-    description: 'A tool that uses GPT models to generate various types of content including blog posts, product descriptions, and social media updates.',
-    image: '/placeholder.svg',
-    technologies: ['OpenAI API', 'React', 'Node.js', 'AWS Lambda'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project6',
+    icon: Image
   },
 ];
 
@@ -95,6 +101,9 @@ const ProjectsSection = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-space-darker via-transparent to-transparent"></div>
+                <div className="absolute top-4 right-4 text-space-purple-light">
+                  <project.icon size={24} />
+                </div>
               </div>
               
               <div className="p-6">
