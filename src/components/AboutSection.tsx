@@ -53,7 +53,7 @@ const AboutSection = () => {
           >
             <h3 className="text-3xl font-bold mb-4">AI & ML Engineer / Full Stack Developer</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Hello! I'm an AI & Machine Learning Engineer with expertise in full-stack development. 
+              Hello! I'm a student at IIT Ropar with expertise in AI & Machine Learning and full-stack development. 
               I specialize in creating intelligent systems that solve complex problems while also building 
               complete web applications from front to back end.
             </p>
@@ -70,15 +70,15 @@ const AboutSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Email:</h4>
-                <p className="text-gray-300">adarsh.pandey@example.com</p>
+                <p className="text-gray-300">adarshp12052006@gmail.com</p>
               </div>
               <div>
                 <h4 className="font-semibold text-space-purple-light mb-2">Location:</h4>
-                <p className="text-gray-300">India</p>
+                <p className="text-gray-300">Kalyan, Maharashtra, India</p>
               </div>
               <div>
-                <h4 className="font-semibold text-space-purple-light mb-2">Experience:</h4>
-                <p className="text-gray-300">3+ Years</p>
+                <h4 className="font-semibold text-space-purple-light mb-2">Phone:</h4>
+                <p className="text-gray-300">+91 9175465182</p>
               </div>
             </div>
             

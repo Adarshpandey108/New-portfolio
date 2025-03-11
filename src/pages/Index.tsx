@@ -12,6 +12,20 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   useEffect(() => {
+    // Update favicon
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (!link) {
+      const newLink = document.createElement('link');
+      newLink.rel = 'icon';
+      newLink.href = '/lovable-uploads/4a22fc5e-78e3-42c9-a482-05bb8e9c15b2.png';
+      document.head.appendChild(newLink);
+    } else {
+      link.href = '/lovable-uploads/4a22fc5e-78e3-42c9-a482-05bb8e9c15b2.png';
+    }
+    
+    // Update title
+    document.title = "Adarsh Pandey | Portfolio";
+    
     // Smooth scroll behavior for anchor links
     const handleAnchorClick = (e: Event) => {
       e.preventDefault();

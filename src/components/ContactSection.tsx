@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/components/ui/use-toast';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 
 const ContactSection = () => {
   const [ref, inView] = useInView({
@@ -71,15 +71,15 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { name: 'Github', icon: Github, href: 'https://github.com/' },
-    { name: 'LinkedIn', icon: Linkedin, href: 'https://linkedin.com/' },
-    { name: 'Twitter', icon: Twitter, href: 'https://twitter.com/' },
+    { name: 'Github', icon: Github, href: 'https://github.com/Adarshpandey108' },
+    { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/adarsh-pandey-432a94315/' },
+    { name: 'Email', icon: Mail, href: 'mailto:adarshp12052006@gmail.com' },
   ];
 
   const contactInfo = [
-    { icon: Mail, title: 'Email', info: 'your.email@example.com' },
-    { icon: Phone, title: 'Phone', info: '+1 (123) 456-7890' },
-    { icon: MapPin, title: 'Location', info: 'City, Country' },
+    { icon: Mail, title: 'Email', info: 'adarshp12052006@gmail.com' },
+    { icon: Phone, title: 'Phone', info: '+91 9175465182' },
+    { icon: MapPin, title: 'Location', info: 'Kalyan, Maharashtra, India' },
   ];
 
   return (

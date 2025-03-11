@@ -6,25 +6,18 @@ import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const educationData = [
   {
-    degree: 'Master of Science in Machine Learning',
-    institution: 'Stanford University',
-    location: 'Stanford, CA',
-    duration: '2018 - 2020',
-    description: 'Focused on deep learning techniques, natural language processing, and computer vision. Completed thesis on reinforcement learning applications.',
+    degree: 'B.Tech in Computer Science and Engineering',
+    institution: 'Indian Institute of Technology (IIT) Ropar',
+    location: 'Ropar, Punjab',
+    duration: '2022 - Present',
+    description: 'Pursuing Bachelor of Technology in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning.',
   },
   {
-    degree: 'Bachelor of Science in Computer Science',
-    institution: 'MIT',
-    location: 'Cambridge, MA',
-    duration: '2014 - 2018',
-    description: 'Specialized in artificial intelligence and data structures. Graduated with honors and completed several research projects in AI algorithms.',
-  },
-  {
-    degree: 'High School Diploma',
-    institution: 'Science and Technology Academy',
-    location: 'Boston, MA',
-    duration: '2010 - 2014',
-    description: 'Valedictorian with focus on advanced mathematics and computer programming. Led the school\'s robotics team to regional championships.',
+    degree: 'High School',
+    institution: 'Junior College',
+    location: 'Kalyan, Maharashtra',
+    duration: '2020 - 2022',
+    description: 'Completed high school with focus on science and mathematics, developing a strong foundation for engineering studies.',
   },
 ];
 

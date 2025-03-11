@@ -1,16 +1,16 @@
 
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import ParticleBackground from './ParticleBackground';
 
 const HeroSection = () => {
   const heroRef = useRef(null);
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://linkedin.com/', label: 'LinkedIn' },
-    { icon: Twitter, href: 'https://twitter.com/', label: 'Twitter' },
+    { icon: Github, href: 'https://github.com/Adarshpandey108', label: 'GitHub' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/in/adarsh-pandey-432a94315/', label: 'LinkedIn' },
+    { icon: Mail, href: 'mailto:adarshp12052006@gmail.com', label: 'Email' },
   ];
 
   return (
@@ -34,10 +34,19 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-2xl md:text-3xl font-medium mb-8 text-gray-300"
+            className="text-2xl md:text-3xl font-medium mb-2 text-gray-300"
           >
             AI & ML Engineer | Full Stack Developer
           </motion.h2>
+          
+          <motion.h3
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="text-xl md:text-2xl font-medium mb-8 text-gray-400"
+          >
+            Student at IIT Ropar
+          </motion.h3>
           
           <motion.div
             initial={{ opacity: 0, y: 30 }}

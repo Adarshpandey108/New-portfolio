@@ -39,7 +39,21 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#home" className="text-2xl font-bold text-gradient">Portfolio</a>
+            <a 
+              href="#home" 
+              className="flex items-center"
+              onClick={(e) => { 
+                e.preventDefault(); 
+                window.location.reload(); 
+              }}
+            >
+              <img 
+                src="/lovable-uploads/4a22fc5e-78e3-42c9-a482-05bb8e9c15b2.png" 
+                alt="Adarsh Pandey Logo" 
+                className="h-10 w-10 rounded-full mr-2 border-2 border-space-purple-light glow"
+              />
+              <span className="text-2xl font-bold text-gradient">Adarsh Pandey</span>
+            </a>
           </div>
           
           {/* Desktop Navigation */}

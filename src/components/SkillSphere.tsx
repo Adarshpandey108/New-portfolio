@@ -1,7 +1,7 @@
 
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Text, Cloud, OrbitControls } from '@react-three/drei';
+import { Text, OrbitControls } from '@react-three/drei';
 import { Group } from 'three';
 
 const skills = [
@@ -46,11 +46,7 @@ const SkillSphere = () => {
       <Canvas camera={{ position: [0, 0, 15], fov: 75 }}>
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
-        <Cloud
-          opacity={0.5}
-          speed={0.4}
-          segments={20}
-        />
+        
         <group>
           {skills.map((skill, i) => {
             const phi = Math.acos(-1 + (2 * i) / skills.length);

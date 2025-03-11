@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ExternalLink, Github, Eye, CloudSun, Image } from 'lucide-react';
+import { ExternalLink, Github, Eye, CloudSun, Image, Bot, MessageSquare, Camera, SquarePen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const projectsData = [
@@ -20,45 +20,54 @@ const projectsData = [
     description: 'An informative platform showcasing the natural beauty and cultural heritage of India, featuring various regions and their unique characteristics.',
     image: '/placeholder.svg',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
-    githubLink: 'https://github.com/adarshpandey108/Bharat_Varsh_-Prakrite-',
+    githubLink: 'https://github.com/Adarshpandey108/Bharat_Varsh_-Prakrite-',
     liveLink: 'https://adarshpandey108.github.io/Bharat_Varsh_-Prakrite-/',
     icon: Image
   },
   {
-    title: 'AI Image Recognition Platform',
-    description: 'A machine learning platform that can identify objects in images with high accuracy using state-of-the-art convolutional neural networks.',
+    title: 'AI Chat Bot - Sangrah',
+    description: 'An intelligent chatbot capable of natural language understanding and generation, providing human-like conversations and assistance to users.',
     image: '/placeholder.svg',
-    technologies: ['PyTorch', 'FastAPI', 'React', 'Docker'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project1',
-    icon: Image
+    technologies: ['JavaScript', 'NLP', 'AI', 'React'],
+    githubLink: 'https://github.com/Adarshpandey108/',
+    liveLink: 'https://adarshpandey108.github.io/Ai-Chat-Bot---Sangrah-/',
+    icon: MessageSquare
   },
   {
-    title: 'Natural Language Processing API',
-    description: 'An API service that provides text analysis, sentiment analysis, entity extraction, and other NLP features for developers.',
+    title: 'Yantraveer - AI Virtual Assistant',
+    description: 'A sophisticated AI virtual assistant capable of understanding voice commands and performing various tasks like answering questions and controlling applications.',
     image: '/placeholder.svg',
-    technologies: ['TensorFlow', 'Flask', 'JavaScript', 'MongoDB'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project2',
-    icon: Image
+    technologies: ['Python', 'Speech Recognition', 'NLP', 'AI'],
+    githubLink: 'https://github.com/Adarshpandey108/',
+    liveLink: 'https://adarshpandey108.github.io/Yantraveer-Ai-Virtual-Assistant-/',
+    icon: Bot
   },
   {
-    title: 'Recommendation System',
-    description: 'A collaborative filtering recommendation system for an e-commerce platform that suggests products based on user behavior and preferences.',
+    title: 'Human Pose Estimation',
+    description: 'A computer vision application that detects and tracks human body joints and posture in real-time using advanced machine learning algorithms.',
     image: '/placeholder.svg',
-    technologies: ['Python', 'Scikit-learn', 'PostgreSQL', 'Redis'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project3',
-    icon: Image
+    technologies: ['Python', 'OpenCV', 'TensorFlow', 'Computer Vision'],
+    githubLink: 'https://github.com/Adarshpandey108/Human-pose-Estimation-K-yamiti-',
+    liveLink: 'https://github.com/Adarshpandey108/Human-pose-Estimation-K-yamiti-',
+    icon: Camera
   },
   {
-    title: 'Full-Stack Learning Platform',
-    description: 'An educational platform with course content, quizzes, progress tracking, and an interactive coding environment for students.',
+    title: 'Jadui Vastra',
+    description: 'An image processing application that selectively removes red-colored clothing from images, effectively making them transparent using computer vision techniques.',
     image: '/placeholder.svg',
-    technologies: ['React', 'Node.js', 'GraphQL', 'MongoDB'],
-    githubLink: 'https://github.com/',
-    liveLink: 'https://example.com/project4',
-    icon: Image
+    technologies: ['Python', 'OpenCV', 'Image Processing', 'Computer Vision'],
+    githubLink: 'https://github.com/Adarshpandey108/Jadui_vastra....',
+    liveLink: 'https://github.com/Adarshpandey108/Jadui_vastra....',
+    icon: SquarePen
+  },
+  {
+    title: 'Air Canvas',
+    description: 'A computer vision application that allows users to draw in the air using hand gestures, creating a virtual canvas controlled by movement.',
+    image: '/placeholder.svg',
+    technologies: ['Python', 'OpenCV', 'Hand Tracking', 'Computer Vision'],
+    githubLink: 'https://github.com/Adarshpandey108/Air-canvas',
+    liveLink: 'https://github.com/Adarshpandey108/Air-canvas',
+    icon: SquarePen
   },
 ];
 
