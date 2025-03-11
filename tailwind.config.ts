@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Space theme colors
+				space: {
+					dark: '#0F0F1B',
+					darker: '#090914',
+					darkest: '#050510',
+					'purple-light': '#9b87f5',
+					'purple-medium': '#7E69AB',
+					'purple-dark': '#6E59A5',
+					'charcoal': '#1A1F2C',
+					'accent': '#A78BFA'
 				}
 			},
 			borderRadius: {
@@ -70,25 +82,41 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
-					},
-					to: {
-						height: '0'
-					}
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'glow': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.6' }
+				},
+				'spin-slow': {
+					'0%': { transform: 'rotate(0deg)' },
+					'100%': { transform: 'rotate(360deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'glow': 'glow 3s ease-in-out infinite',
+				'spin-slow': 'spin-slow 20s linear infinite'
+			},
+			fontFamily: {
+				'space': ['Space Grotesk', 'sans-serif'],
+				'mono': ['JetBrains Mono', 'monospace']
+			},
+			backgroundImage: {
+				'space-gradient': 'linear-gradient(to right, #0F0F1B, #1A1F2C)',
+				'purple-gradient': 'linear-gradient(to right, #6E59A5, #9b87f5)',
+				'hero-pattern': 'radial-gradient(circle, rgba(121,68,154,0.13) 0%, rgba(35,10,89,0.05) 100%)'
 			}
 		}
 	},
