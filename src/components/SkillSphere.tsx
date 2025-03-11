@@ -15,8 +15,10 @@ const skills = [
 const SkillText = ({ skill, position, color }) => {
   const textRef = useRef<Group>(null);
   
-  useFrame(({ clock }) => {
+  useFrame(() => {
     if (textRef.current) {
+      // Make text always face the camera by setting rotation to 0
+      textRef.current.rotation.set(0, 0, 0);
       textRef.current.lookAt(0, 0, 0);
     }
   });

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -13,11 +12,32 @@ const educationData = [
     description: 'Pursuing Bachelor of Technology in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning.',
   },
   {
-    degree: 'High School',
-    institution: 'Junior College',
+    degree: 'Minor in AI and ML',
+    institution: 'Indian Institute of Technology (IIT) Ropar',
+    location: 'Rupnagar, Punjab',
+    duration: '2024 - 2025',
+    description: 'Minor degree in Artificial Intelligence and Machine Learning with CGPA 7.0',
+  },
+  {
+    degree: "Bachelor's of Computer Application",
+    institution: 'University of Mumbai',
     location: 'Kalyan, Maharashtra',
-    duration: '2020 - 2022',
-    description: 'Completed high school with focus on science and mathematics, developing a strong foundation for engineering studies.',
+    duration: '2023 - 2026',
+    description: 'Pursuing BCA with outstanding academic performance, maintaining a CGPA of 9.27',
+  },
+  {
+    degree: 'HSC (12th)',
+    institution: 'D.T. Kalani College',
+    location: 'Shahad, Maharashtra',
+    duration: '2021 - 2023',
+    description: 'Completed Higher Secondary Education in Commerce with Mathematics & IT, securing 84%',
+  },
+  {
+    degree: 'SSC (10th)',
+    institution: 'Century Rayon High School',
+    location: 'Shahad, Maharashtra',
+    duration: '2011 - 2021',
+    description: 'Completed Secondary School Education with 71%',
   },
 ];
 
