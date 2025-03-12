@@ -4,13 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Calendar, MapPin } from 'lucide-react';
 
 const educationData = [
-  {
-    degree: 'B.Tech in Computer Science and Engineering',
-    institution: 'Indian Institute of Technology (IIT) Ropar',
-    location: 'Ropar, Punjab',
-    duration: '2022 - Present',
-    description: 'Pursuing Bachelor of Technology in Computer Science and Engineering with a focus on Artificial Intelligence and Machine Learning.',
-  },
+ 
   {
     degree: 'Minor in AI and ML',
     institution: 'Indian Institute of Technology (IIT) Ropar',

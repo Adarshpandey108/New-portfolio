@@ -9,7 +9,7 @@ const projectsData = [
   {
     title: 'Weather Application',
     description: 'A responsive weather application that provides real-time weather updates for any location. Features include current conditions, forecasts, and temperature tracking.',
-    image: '/placeholder.svg',
+    image: '/placeholder.jpg',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Weather API'],
     githubLink: 'https://github.com/adarshpandey108/Weather-app',
     liveLink: 'https://adarshpandey108.github.io/Weather-app/',
@@ -18,7 +18,7 @@ const projectsData = [
   {
     title: 'Bharat Varsh Prakrite',
     description: 'An informative platform showcasing the natural beauty and cultural heritage of India, featuring various regions and their unique characteristics.',
-    image: '/placeholder.svg',
+    image: '/placeholder1.jpg',
     technologies: ['HTML', 'CSS', 'JavaScript', 'React'],
     githubLink: 'https://github.com/Adarshpandey108/Bharat_Varsh_-Prakrite-',
     liveLink: 'https://adarshpandey108.github.io/Bharat_Varsh_-Prakrite-/',
@@ -27,16 +27,16 @@ const projectsData = [
   {
     title: 'AI Chat Bot - Sangrah',
     description: 'An intelligent chatbot capable of natural language understanding and generation, providing human-like conversations and assistance to users.',
-    image: '/placeholder.svg',
+    image: '/placeholder2.png',
     technologies: ['JavaScript', 'NLP', 'AI', 'React'],
     githubLink: 'https://github.com/Adarshpandey108/',
     liveLink: 'https://adarshpandey108.github.io/Ai-Chat-Bot---Sangrah-/',
     icon: MessageSquare
   },
   {
-    title: 'Yantraveer - AI Virtual Assistant',
+    title: 'Cronuson - AI Virtual Assistant',
     description: 'A sophisticated AI virtual assistant capable of understanding voice commands and performing various tasks like answering questions and controlling applications.',
-    image: '/placeholder.svg',
+    image: '/placeholder3.webp',
     technologies: ['Python', 'Speech Recognition', 'NLP', 'AI'],
     githubLink: 'https://github.com/Adarshpandey108/',
     liveLink: 'https://adarshpandey108.github.io/Yantraveer-Ai-Virtual-Assistant-/',
@@ -45,7 +45,7 @@ const projectsData = [
   {
     title: 'Human Pose Estimation',
     description: 'A computer vision application that detects and tracks human body joints and posture in real-time using advanced machine learning algorithms.',
-    image: '/placeholder.svg',
+    image: '/placeholder4.webp',
     technologies: ['Python', 'OpenCV', 'TensorFlow', 'Computer Vision'],
     githubLink: 'https://github.com/Adarshpandey108/Human-pose-Estimation-K-yamiti-',
     liveLink: 'https://github.com/Adarshpandey108/Human-pose-Estimation-K-yamiti-',
@@ -54,7 +54,7 @@ const projectsData = [
   {
     title: 'Jadui Vastra',
     description: 'An image processing application that selectively removes red-colored clothing from images, effectively making them transparent using computer vision techniques.',
-    image: '/placeholder.svg',
+    image: '/placeholder5.webp',
     technologies: ['Python', 'OpenCV', 'Image Processing', 'Computer Vision'],
     githubLink: 'https://github.com/Adarshpandey108/Jadui_vastra....',
     liveLink: 'https://github.com/Adarshpandey108/Jadui_vastra....',
@@ -63,7 +63,7 @@ const projectsData = [
   {
     title: 'Air Canvas',
     description: 'A computer vision application that allows users to draw in the air using hand gestures, creating a virtual canvas controlled by movement.',
-    image: '/placeholder.svg',
+    image: '/placeholder6.webp',
     technologies: ['Python', 'OpenCV', 'Hand Tracking', 'Computer Vision'],
     githubLink: 'https://github.com/Adarshpandey108/Air-canvas',
     liveLink: 'https://github.com/Adarshpandey108/Air-canvas',

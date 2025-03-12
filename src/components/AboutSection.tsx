@@ -81,13 +81,14 @@ const AboutSection = () => {
                 <p className="text-gray-300">+91 9175465182</p>
               </div>
             </div>
-            
-            <Button 
-              className="group bg-space-purple-dark hover:bg-space-purple-medium transition-all duration-300 text-white px-6 py-3 rounded-full"
-            >
-              <Download className="mr-2 h-5 w-5 group-hover:animate-bounce" />
-              Download Resume
-            </Button>
+            <a 
+  className="inline-block text-center group bg-space-purple-dark hover:bg-space-purple-medium transition-all duration-300 text-white px-6 py-3 rounded-full"
+  href="/resume1.pdf"
+  download
+>
+  <Download className="mr-2 h-5 w-5 inline-block align-middle group-hover:animate-bounce" />
+  <span className="align-middle">Download Resume</span>
+</a>
           </motion.div>
         </div>
       </div>

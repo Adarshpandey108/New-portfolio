@@ -50,6 +50,7 @@ const SkillsSection = () => {
                   <li>• Computer Vision</li>
                   <li>• Data Analysis & Visualization</li>
                   <li>• Model Deployment & MLOps</li>
+                  <li>• Machine Learning</li>
                 </ul>
               </div>
               
@@ -61,6 +62,7 @@ const SkillsSection = () => {
                   <li>• Databases (MongoDB, SQL)</li>
                   <li>• API Development (REST, GraphQL)</li>
                   <li>• DevOps & Cloud Deployment</li>
+                  <li>• Python (Flask, Django, etc)</li>
                 </ul>
               </div>
             </div>
