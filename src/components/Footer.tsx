@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             
             <p className="text-gray-400 text-sm flex items-center">
-              © {currentYear} - Made with <Heart className="h-3 w-3 mx-1 text-space-purple-light" /> by Adarsh Pandey
+              © {currentYear} - Made by IITian Adarsh <Heart className="h-3 w-3 mx-1 text-space-purple-light" /> 
             </p>
           </div>
         </div>
